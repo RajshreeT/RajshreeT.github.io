@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgb(51, 49, 49);
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    height: 100vh
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h3 {
+    display: block;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #1ab4f1;
+    border-bottom: 5px solid #1ab4f1;
+}
+
+.container {
+    background: #F9F9F9;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 #000000, 0 5px 5px 0 #000000;
+    justify-content: center;
+    width: 430px;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+
+span {
+    color: red;
+}
+
+td input[type="date"],
+td input[type="text"],
+td input[type="email"],
+td input[type="tel"],
+td input[type="url"],
+td textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    position: relative;
+    box-shadow: none;
+    outline: none;
+    transition: all .5s ease;
+    border-radius: 5px;
+    border: 2px solid#E5E5E6;
+}
+
+td select {
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    position: relative;
+    box-shadow: none;
+    outline: none;
+    transition: all .5s ease;
+    border-radius: 5px;
+    border: 2px solid#E5E5E6;
+}
+
+input[type=file]::file-selector-button {
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    position: relative;
+    box-shadow: none;
+    outline: none;
+    transition: all .5s ease;
+    border-radius: 5px;
+    border: 2px solid#E5E5E6;
+}
+
+.form-input:focus {
+    border-color: #4285F4;
+    box-shadow: 0 0 10px #4285F4;
+}
+
+.form-input::value {
+    color: red;
+    opacity: 1;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    cursor: pointer;
+    width: 50%;
+    border-radius: 15px;
+    border: none;
+    background: #1ab4f1;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 7px;
+    font-size: 15px;
+    align-items: center;
+}
+
+button:hover {
+    background: #0175a3;
+    transition: all .5s ease;
+}
